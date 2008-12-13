@@ -1,0 +1,11 @@
+*.iso
+*.list
+*.md5sum
+*.packages
+.directory
+.stage/
+binary/
+cache/
+chroot/
+debian_live-buildlog.*
+log.*
