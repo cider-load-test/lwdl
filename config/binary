@@ -6,7 +6,7 @@ LH_BINARY_FILESYSTEM="fat16"
 
 # $LH_BINARY_IMAGES: set image type
 # (Default: usb-hdd)
-LH_BINARY_IMAGES="usb-hdd"
+LH_BINARY_IMAGES="iso"
 
 # $LH_BINARY_INDICES: set apt/aptitude generic indices
 # (Default: enabled)
@@ -63,7 +63,7 @@ LH_ISO_APPLICATION="Debian Live"
 
 # $LH_ISO_PREPARER: set iso preparer
 # (Default: live-helper 1.0.1-2; http://packages.qa.debian.org/live-helper)
-LH_ISO_PREPARER="live-helper 1.0.1-2; http://packages.qa.debian.org/live-helper"
+LH_ISO_PREPARER="live-helper 1.0.3+20090203.103010; http://packages.qa.debian.org/live-helper"
 
 # $LH_ISO_PUBLISHER: set iso publisher
 # (Default: Debian Live project; http://debian-live.alioth.debian.org/; debian-live@lists.debian.org)
@@ -71,7 +71,7 @@ LH_ISO_PUBLISHER="Debian Live project; http://debian-live.alioth.debian.org/; de
 
 # $LH_ISO_VOLUME: set iso volume (max 32 chars)
 # (Default: Debian Live 20081207-10:28)
-LH_ISO_VOLUME="Debian Live 20081207-10:28"
+LH_ISO_VOLUME="Debian Live"
 
 # $LH_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)

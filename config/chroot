@@ -38,11 +38,11 @@ LH_LINUX_PACKAGES="linux-image-2.6 aufs-modules-2.6 squashfs-modules-2.6"
 
 # $LH_PACKAGES: set packages to install
 # (Default: empty)
-LH_PACKAGES="loop-aes-utils"
+LH_PACKAGES="loop-aes-utils bootchart bootchart-view"
 
 # $LH_PACKAGES_LISTS: set package list to install
 # (Default: standard)
-LH_PACKAGES_LISTS="lxde packages"
+LH_PACKAGES_LISTS="lxde packages lxlauncher"
 
 # $LH_TASKS: set tasks to install
 # (Default: empty)
