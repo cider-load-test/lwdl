@@ -22,7 +22,7 @@ LH_INTERACTIVE="disabled"
 
 # $LH_KEYRING_PACKAGES: set keyring packages
 # (Default: empty)
-LH_KEYRING_PACKAGES=""
+LH_KEYRING_PACKAGES="debian-archive-keyring debian-unofficial-archive-keyring"
 
 # $LH_LANGUAGE: set language to use
 # (Default: empty)
@@ -34,14 +34,14 @@ LH_LINUX_FLAVOURS="686"
 
 # $LH_LINUX_PACKAGES: set kernel packages to use
 # (Default: autodetected)
-LH_LINUX_PACKAGES="linux-image-2.6 aufs-modules-2.6 squashfs-modules-2.6"
+LH_LINUX_PACKAGES="linux-image-2.6 ${LH_UNION_FILESYSTEM}-modules-2.6 squashfs-modules-2.6"
 
 # $LH_PACKAGES: set packages to install
 # (Default: empty)
-LH_PACKAGES="loop-aes-utils bootchart bootchart-view"
+LH_PACKAGES="bootchart bootchart-view"
 
 # $LH_PACKAGES_LISTS: set package list to install
-# (Default: standard)
+# (Default: lxde packages lxlauncher)
 LH_PACKAGES_LISTS="lxde packages lxlauncher"
 
 # $LH_TASKS: set tasks to install

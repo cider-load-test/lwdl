@@ -17,7 +17,7 @@ LH_BOOTSTRAP_INCLUDE=""
 LH_BOOTSTRAP_EXCLUDE=""
 
 # $LH_BOOTSTRAP_FLAVOUR: select flavour to use
-# (Default: )
+# (Default: empty)
 LH_BOOTSTRAP_FLAVOUR=""
 
 # $LH_BOOTSTRAP_KEYRING: set distribution keyring
@@ -25,7 +25,7 @@ LH_BOOTSTRAP_FLAVOUR=""
 LH_BOOTSTRAP_KEYRING=""
 
 # $LH_DISTRIBUTION: select distribution to use
-# (Default: sid)
+# (Default: lenny)
 LH_DISTRIBUTION="lenny"
 
 # $LH_MIRROR_BOOTSTRAP: set mirror to bootstrap from

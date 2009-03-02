@@ -2,11 +2,11 @@
 
 # $LH_BINARY_FILESYSTEM: set image filesystem
 # (Default: fat16)
-LH_BINARY_FILESYSTEM="fat16"
+LH_BINARY_FILESYSTEM="fat32"
 
 # $LH_BINARY_IMAGES: set image type
-# (Default: usb-hdd)
-LH_BINARY_IMAGES="iso"
+# (Default: iso)
+LH_BINARY_IMAGES="usb-hdd"
 
 # $LH_BINARY_INDICES: set apt/aptitude generic indices
 # (Default: enabled)
@@ -34,8 +34,8 @@ LH_CHECKSUMS="enabled"
 LH_CHROOT_BUILD="enabled"
 
 # $LH_DEBIAN_INSTALLER: set debian-installer
-# (Default: enabled)
-LH_DEBIAN_INSTALLER="netinst"
+# (Default: disabled)
+LH_DEBIAN_INSTALLER="live"
 
 # $LH_DEBIAN_INSTALLER_DISTRIBUTION: set debian-installer suite
 # (Default: empty)
@@ -62,16 +62,16 @@ LH_HOSTNAME="debian"
 LH_ISO_APPLICATION="Debian Live"
 
 # $LH_ISO_PREPARER: set iso preparer
-# (Default: live-helper 1.0.1-2; http://packages.qa.debian.org/live-helper)
-LH_ISO_PREPARER="live-helper 1.0.3+20090203.103010; http://packages.qa.debian.org/live-helper"
+# (Default: live-helper $VERSION; http://packages.qa.debian.org/live-helper)
+LH_ISO_PREPARER="live-helper $VERSION; http://packages.qa.debian.org/live-helper"
 
 # $LH_ISO_PUBLISHER: set iso publisher
 # (Default: Debian Live project; http://debian-live.alioth.debian.org/; debian-live@lists.debian.org)
 LH_ISO_PUBLISHER="Debian Live project; http://debian-live.alioth.debian.org/; debian-live@lists.debian.org"
 
 # $LH_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: Debian Live 20081207-10:28)
-LH_ISO_VOLUME="Debian Live"
+# (Default: Debian lenny $(date +%Y%m%d-%H:%M))
+LH_ISO_VOLUME="Debian lenny $(date +%Y%m%d-%H:%M)"
 
 # $LH_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
@@ -82,7 +82,7 @@ LH_JFFS2_ERASEBLOCK=""
 LH_MEMTEST="memtest86+"
 
 # $LH_WIN32_LOADER: set win32-loader
-# (Default: enabled)
+# (Default: disabled)
 LH_WIN32_LOADER="enabled"
 
 # $LH_NET_ROOT_FILESYSTEM: set netboot filesystem
@@ -134,12 +134,12 @@ LH_SYSLINUX_TIMEOUT="0"
 LH_SYSLINUX_CFG=""
 
 # $LH_SYSLINUX_MENU: set syslinux menu
-# (Default: disabled)
-LH_SYSLINUX_MENU="disabled"
+# (Default: enabled)
+LH_SYSLINUX_MENU="enabled"
 
 # $LH_SYSLINUX_MENU_LIVE_ENTRY: set text to be used on the menu for live entries
-# (Default: Start Debian Live)
-LH_SYSLINUX_MENU_LIVE_ENTRY="Start Debian Live"
+# (Default: Live)
+LH_SYSLINUX_MENU_LIVE_ENTRY="Live"
 
 # $LH_SYSLINUX_MENU_LIVE_FAILSAFE_ENTRY: set text to be used on the menu for live entries (failsafe ones)
 # (Default: )
