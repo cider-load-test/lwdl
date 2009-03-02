@@ -2,7 +2,7 @@
 
 # $LH_BINARY_FILESYSTEM: set image filesystem
 # (Default: fat16)
-LH_BINARY_FILESYSTEM="fat32"
+LH_BINARY_FILESYSTEM="fat16"
 
 # $LH_BINARY_IMAGES: set image type
 # (Default: iso)
@@ -83,7 +83,7 @@ LH_MEMTEST="memtest86+"
 
 # $LH_WIN32_LOADER: set win32-loader
 # (Default: disabled)
-LH_WIN32_LOADER="enabled"
+LH_WIN32_LOADER="disabled"
 
 # $LH_NET_ROOT_FILESYSTEM: set netboot filesystem
 # (Default: nfs)
