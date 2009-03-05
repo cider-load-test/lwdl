@@ -2,7 +2,7 @@
 set -e
 
 # disable console tty4,tty5,tty6
-sed -i 's/^[456]/$&/' /etc/inittab
+sed -i 's/^[456]/#\ &/' /etc/inittab
 
 # parallel init script
 sed -i 's/^CONCURRENCY=none/CONCURRENCY=shell/' /etc/init.d/rc

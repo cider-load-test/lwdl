@@ -5,7 +5,7 @@
 LH_BINARY_FILESYSTEM="fat16"
 
 # $LH_BINARY_IMAGES: set image type
-# (Default: iso)
+# (Default: usb-hdd)
 LH_BINARY_IMAGES="usb-hdd"
 
 # $LH_BINARY_INDICES: set apt/aptitude generic indices
@@ -34,8 +34,8 @@ LH_CHECKSUMS="enabled"
 LH_CHROOT_BUILD="enabled"
 
 # $LH_DEBIAN_INSTALLER: set debian-installer
-# (Default: disabled)
-LH_DEBIAN_INSTALLER="live"
+# (Default: netinst)
+LH_DEBIAN_INSTALLER="netinst"
 
 # $LH_DEBIAN_INSTALLER_DISTRIBUTION: set debian-installer suite
 # (Default: empty)
@@ -62,16 +62,16 @@ LH_HOSTNAME="debian"
 LH_ISO_APPLICATION="Debian Live"
 
 # $LH_ISO_PREPARER: set iso preparer
-# (Default: live-helper $VERSION; http://packages.qa.debian.org/live-helper)
-LH_ISO_PREPARER="live-helper $VERSION; http://packages.qa.debian.org/live-helper"
+# (Default: live-helper 1.0.4-1; http://packages.qa.debian.org/live-helper)
+LH_ISO_PREPARER="live-helper 1.0.4-1; http://packages.qa.debian.org/live-helper"
 
 # $LH_ISO_PUBLISHER: set iso publisher
 # (Default: Debian Live project; http://debian-live.alioth.debian.org/; debian-live@lists.debian.org)
 LH_ISO_PUBLISHER="Debian Live project; http://debian-live.alioth.debian.org/; debian-live@lists.debian.org"
 
 # $LH_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: Debian lenny $(date +%Y%m%d-%H:%M))
-LH_ISO_VOLUME="Debian lenny $(date +%Y%m%d-%H:%M)"
+# (Default: Debian lenny 20090303-09:44)
+LH_ISO_VOLUME="Debian lenny 20090303-09:44"
 
 # $LH_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
