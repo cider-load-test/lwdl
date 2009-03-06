@@ -4,7 +4,6 @@ e2tools
 fuse-utils
 gparted
 grub
-iceweasel-l10n-ja
 jfsutils
 lv
 mbr
@@ -14,10 +13,7 @@ parted
 partimage
 reiser4progs
 reiserfsprogs
-scim
-scim-anthy
 syslinux
 syslinux-common
 testdisk
-ttf-vlgothic
 xfsprogs
