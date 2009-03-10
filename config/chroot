@@ -30,7 +30,7 @@ LH_LANGUAGE="ja"
 
 # $LH_LINUX_FLAVOURS: set kernel flavour to use
 # (Default: autodetected)
-LH_LINUX_FLAVOURS="686"
+LH_LINUX_FLAVOURS="486"
 
 # $LH_LINUX_PACKAGES: set kernel packages to use
 # (Default: autodetected)
@@ -38,11 +38,11 @@ LH_LINUX_PACKAGES="linux-image-2.6 aufs-modules-2.6 squashfs-modules-2.6"
 
 # $LH_PACKAGES: set packages to install
 # (Default: empty)
-LH_PACKAGES="bootchart bootchart-view lxlauncer"
+LH_PACKAGES="bootchart bootchart-view lxlauncher"
 
 # $LH_PACKAGES_LISTS: set package list to install
 # (Default: lxde packages lxlauncher)
-LH_PACKAGES_LISTS="lxde packages japanese"
+LH_PACKAGES_LISTS="lxde packages japanese kernel-modules"
 
 # $LH_TASKS: set tasks to install
 # (Default: empty)

@@ -1,22 +1,35 @@
-#!/bin/bash
+#!/bin/bash -x
 set -e
 
-# disable console tty2, tty3, tty4,tty5,tty6
+# install wicd
+apt-get -y install wicd
+apt-get -y purge lxnm
+
+# # set debconf dash/insserv
+# debconf-set-selections << EOL
+# dash dash/sh boolean true 
+# insserv insserv/enable boolean true
+# EOL
+#
+# # reconfigureing dash
+# dpkg-reconfigure --frontend=dialog --priority=low dash 
+
+# disable console tty2,tty3,tty4,tty5,tty6
 sed -i 's/^[23456]/#\ &/' /etc/inittab
 
-# parallel init script
+# enable parallel init script
 sed -i 's/^CONCURRENCY=none/CONCURRENCY=shell/' /etc/init.d/rc
-apt-get -y install insserv
-update-bootsystem-insserv
 
 # remove daemon
-DAEMON="stop-bootlogd cron portmap rsyslog"
-for i in $DAEMON; do /usr/sbin/update-rc.d -f $i remove; done
+DAEMON="cron portmap rsyslog partimaged ssh"
+for i in $DAEMON; do update-rc.d -f $i remove; done
 
-# install ophcrack
-#aptitude update
-#aptitude -y -t experimental install ophcrack ophcrack-cli
-
-# purge packages
+# remove packages
 apt-get -y autoremove
+
+# enable insserv
+update-bootsystem-insserv
+
+# prelink
+prelink -amR
 
