@@ -35,7 +35,7 @@ LH_CHROOT_BUILD="enabled"
 
 # $LH_DEBIAN_INSTALLER: set debian-installer
 # (Default: netinst)
-LH_DEBIAN_INSTALLER="live"
+LH_DEBIAN_INSTALLER="netinst"
 
 # $LH_DEBIAN_INSTALLER_DISTRIBUTION: set debian-installer suite
 # (Default: empty)
@@ -70,8 +70,8 @@ LH_ISO_PREPARER="live-helper 1.0.4-1; http://packages.qa.debian.org/live-helper"
 LH_ISO_PUBLISHER="Debian Live project; http://debian-live.alioth.debian.org/; debian-live@lists.debian.org"
 
 # $LH_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: Debian lenny 20090303-09:44)
-LH_ISO_VOLUME="Debian lenny 20090303-09:44"
+# (Default: Debian lenny)
+LH_ISO_VOLUME="Debian lenny"
 
 # $LH_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)

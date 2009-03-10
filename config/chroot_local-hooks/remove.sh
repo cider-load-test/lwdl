@@ -18,7 +18,7 @@ apt-get -y purge lxnm
 sed -i 's/^[23456]/#\ &/' /etc/inittab
 
 # enable parallel init script
-sed -i 's/^CONCURRENCY=none/CONCURRENCY=shell/' /etc/init.d/rc
+sed -i 's/^CONCURRENCY=none/CONCURRENCY=startpar/' /etc/init.d/rc
 
 # remove daemon
 DAEMON="cron portmap rsyslog partimaged ssh"
