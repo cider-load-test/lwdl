@@ -31,5 +31,5 @@ apt-get -y autoremove
 update-bootsystem-insserv
 
 # prelink
-prelink -amR
+prelink -afmR
 
