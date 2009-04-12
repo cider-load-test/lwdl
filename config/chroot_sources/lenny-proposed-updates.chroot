@@ -1,0 +1,3 @@
+# lenny proposed updates
+deb http://ftp.jp.debian.org/debian lenny-proposed-updates main contrib
+deb-src http://ftp.jp.debian.org/debian lenny-proposed-updates main contrib

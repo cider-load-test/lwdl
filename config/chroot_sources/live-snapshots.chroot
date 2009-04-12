@@ -1,1 +1,4 @@
+# Debian Live Snapshot
 deb http://live.debian.net/debian/ ./
+deb-src http://live.debian.net/debian/ ./
+
