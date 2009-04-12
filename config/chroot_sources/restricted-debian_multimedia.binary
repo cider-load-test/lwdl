@@ -1,3 +1,0 @@
-# Debian Multimedia
-deb ftp://ftp.debian-multimedia.org/ lenny main
-deb-src ftp://ftp.debian-multimedia.org/ lenny main
