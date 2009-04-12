@@ -1,0 +1,21 @@
+# ophcrack-cli
+e2fsprogs
+e2tools
+fuse-utils
+gparted
+grub
+jfsutils
+mbr
+ntfs-3g
+ntfsprogs
+ophcrack
+parted
+partimage
+partimage-server
+reiser4progs
+reiserfsprogs
+ssh
+syslinux
+syslinux-common
+testdisk
+xfsprogs
