@@ -30,7 +30,7 @@ poppler-data
 ppp
 pppconfig
 pppoe
-pppoeconfig
+pppoeconf
 printconf
 rar
 rhythmbox
@@ -45,3 +45,4 @@ wine
 xdg-utils
 xsane
 zip
+synaptic
