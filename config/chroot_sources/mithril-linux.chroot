@@ -1,0 +1,3 @@
+# henrich
+deb http://www.mithril-linux.org/~henrich/debian/package/ ./
+deb-src http://www.mithril-linux.org/~henrich/debian/package/ ./

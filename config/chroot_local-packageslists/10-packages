@@ -19,13 +19,16 @@ fusesmb
 fusion-icon
 gimp
 gstreamer0.10-ffmpeg
-gstreamer0.10-plugins-ugly
 gstreamer0.10-plugins-bad
+gstreamer0.10-plugins-ugly
 hal-cups-utils
 icedtea-gcjwebplugin
 inkscape
+lha
 libgl1-mesa-dri
 libnss-mdns
+mozplugger
+openclipart
 openjdk-6-jre
 p7zip-full
 pidgin
@@ -43,6 +46,7 @@ smbclient
 smbfs
 synaptic
 system-config-printer
+timidity
 totem
 totem-mozilla
 tsclient
@@ -51,7 +55,3 @@ wine
 xdg-utils
 xsane
 zip
-lha
-mozplugger
-timidity
-openclipart

@@ -17,7 +17,7 @@ sed -i 's/^[23456]/#\ &/' /etc/inittab
 sed -i 's/^CONCURRENCY=none/CONCURRENCY=startpar/' /etc/init.d/rc
 
 # remove daemon
-DAEMON="cron portmap rsyslog partimaged ssh timidity"
+DAEMON="cron portmap rsyslog partimaged ssh timidity saned"
 for i in $DAEMON; do update-rc.d -f $i remove; done
 
 # remove packages
@@ -38,7 +38,7 @@ do
 done
 
 # enable insserv
-update-bootsystem-insserv
+#update-bootsystem-insserv
 
 # prelink
 prelink -afmR
