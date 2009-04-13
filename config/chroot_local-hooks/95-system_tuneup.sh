@@ -17,11 +17,25 @@ sed -i 's/^[23456]/#\ &/' /etc/inittab
 sed -i 's/^CONCURRENCY=none/CONCURRENCY=startpar/' /etc/init.d/rc
 
 # remove daemon
-#DAEMON="cron portmap rsyslog partimaged ssh"
-#for i in $DAEMON; do update-rc.d -f $i remove; done
+DAEMON="cron portmap rsyslog partimaged ssh"
+for i in $DAEMON; do update-rc.d -f $i remove; done
 
 # remove packages
-apt-get -y autoremove
+apt-get clean --yes
+apt-get autoremove --yes || true
+
+# Removing unused files
+find . -name *~ | xargs rm -f
+
+rm -f /var/lib/apt/lists/*Release*
+rm -f /var/lib/apt/lists/*Sources*
+rm -f /var/lib/apt/lists/*Packages*
+
+# Truncating logs
+for FILE in $(find /var/log/ -type f)
+do
+        : > ${FILE}
+done
 
 # enable insserv
 update-bootsystem-insserv

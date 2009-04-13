@@ -15,6 +15,7 @@ cups-pdf
 dbus-x11
 evince-gtk
 foomatic-filters-ppds
+fusesmb
 fusion-icon
 gimp
 gstreamer0.10-ffmpeg
@@ -26,6 +27,9 @@ libgl1-mesa-dri
 libnss-mdns
 openjdk-6-jre
 p7zip-full
+pidgin
+pidgin-libnotify
+pidgin-themes
 poppler-data
 ppp
 pppconfig
@@ -36,6 +40,7 @@ rar
 rhythmbox
 smbclient
 smbfs
+synaptic
 system-config-printer
 totem
 totem-mozilla
@@ -45,4 +50,4 @@ wine
 xdg-utils
 xsane
 zip
-synaptic
+lha

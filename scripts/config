@@ -9,7 +9,7 @@ lh_config noautoconfig \
 	--binary-images usb-hdd \
 	--binary-filesystem fat32 \
 	--bootappend-live "${BOOTOPTION_LIVE}" \
-	--apt-recommends enabled \
+	--apt-recommends disabled \
 	--debian-installer live \
 	--debian-installer-distribution lenny \
 	--categories "main contrib non-free" \
