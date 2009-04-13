@@ -20,6 +20,7 @@ fusion-icon
 gimp
 gstreamer0.10-ffmpeg
 gstreamer0.10-plugins-ugly
+gstreamer0.10-plugins-bad
 hal-cups-utils
 icedtea-gcjwebplugin
 inkscape
@@ -51,3 +52,6 @@ xdg-utils
 xsane
 zip
 lha
+mozplugger
+timidity
+openclipart

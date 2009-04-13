@@ -2,7 +2,7 @@
 set -e
 
 # install package 
-PACKAGES="wicd openoffice.org openoffice.org-help-ja openoffice.org-l10n-ja openoffice.org-gtk"
+PACKAGES="wicd openoffice.org openoffice.org-help-ja openoffice.org-l10n-ja openoffice.org-gtk openoffice.org-pdfimport openoffice.org-presentation-minimizer openoffice.org-presenter-console openoffice.org-filter-binfilter openoffice.org-report-builder"
 apt-get -y -t lenny-backports install ${PACKAGES}
 
 # install non-free packages
