@@ -15,7 +15,6 @@ cups-pdf
 dbus-x11
 evince-gtk
 foomatic-filters-ppds
-fusesmb
 fusion-icon
 gimp
 gstreamer0.10-ffmpeg
@@ -42,8 +41,6 @@ pppoeconf
 printconf
 rar
 rhythmbox
-smbclient
-smbfs
 synaptic
 system-config-printer
 timidity
@@ -56,4 +53,5 @@ xdg-utils
 xsane
 zip
 imagemagick
-
+openoffice.org
+openoffice.org-gtk

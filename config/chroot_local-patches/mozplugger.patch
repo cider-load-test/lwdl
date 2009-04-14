@@ -1,0 +1,19 @@
+*** chroot/etc/mozpluggerrc.orig	2009-04-14 12:25:35.000000000 +0900
+--- chroot/etc/mozpluggerrc	2009-04-14 12:25:35.000000000 +0900
+***************
+*** 185,191 ****
+  audio/x-mid:midi,mid:MIDI audio file
+  audio/midi:midi,mid:MIDI audio file
+  audio/x-midi:midi,mid:MIDI audio file
+! 	controls noisy stream: timidity -Od "$file"
+  	controls: playmidi "$file"
+  
+  audio/mod:mod:Soundracker audio Module
+--- 185,191 ----
+  audio/x-mid:midi,mid:MIDI audio file
+  audio/midi:midi,mid:MIDI audio file
+  audio/x-midi:midi,mid:MIDI audio file
+! 	controls noisy stream: timidity -Os "$file"
+  	controls: playmidi "$file"
+  
+  audio/mod:mod:Soundracker audio Module

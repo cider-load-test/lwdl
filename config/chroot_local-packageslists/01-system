@@ -1,5 +1,10 @@
 dash
 eeepc-acpi-scripts
+fuse-utils
+fusesmb
 insserv
 libengine-pkcs11-openssl
 prelink
+acpi
+cpufrequtils
+

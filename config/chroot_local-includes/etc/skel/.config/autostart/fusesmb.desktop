@@ -2,5 +2,5 @@
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Exec=/usr/bin/fusesmb ~/WindowsNetwork -o allow_other
+Exec="/bin/chmod 600 ${HOME}/.smb/fusesmb.conf ; /usr/bin/fusesmb ${HOME}/WindowsNetwork"
 Name=fusesmb
