@@ -1,17 +1,17 @@
+# ttf-umefont
+icedove-l10n-ja
 iceweasel-l10n-ja
 im-switch
 lv
-scim
-scim-bridge-agent
-scim-bridge-client-gtk
-scim-bridge-client-qt
-scim-bridge-client-qt4
-scim-prime
 ttf-ipafont
 ttf-kochi-gothic
 ttf-kochi-mincho
 ttf-mona
 ttf-sazanami-gothic
 ttf-sazanami-mincho
-ttf-umefont
 ttf-vlgothic
+uim
+uim-prime
+uim-qt
+uim-qt3
+uim-applet-gnome

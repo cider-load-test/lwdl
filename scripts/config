@@ -11,7 +11,7 @@ lh_config noautoconfig \
 	--binary-filesystem fat32 \
 	--bootappend-live "${BOOTOPTION_LIVE}" \
 	--bootappend-install "${BOOTOPTION_INSTALLER}" \
-	--apt-recommends disabled \
+	--apt-recommends enabled \
 	--debian-installer live \
 	--debian-installer-distribution lenny \
 	--categories "main contrib non-free" \
