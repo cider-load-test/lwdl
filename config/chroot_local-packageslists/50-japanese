@@ -1,7 +1,10 @@
 # ttf-umefont
-icedove-l10n-ja
+# icedove-l10n-ja
 iceweasel-l10n-ja
+jfbterm
 lv
+manpages-ja
+nkf
 openoffice.org-help-ja
 openoffice.org-l10n-ja
 ttf-kochi-gothic
@@ -15,3 +18,4 @@ uim-applet-gnome
 uim-prime
 uim-qt
 uim-qt3
+unifont

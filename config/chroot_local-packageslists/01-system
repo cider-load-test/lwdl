@@ -1,10 +1,20 @@
+acpi
+acpi-support
+cpufrequtils
 dash
-eeepc-acpi-scripts
+# eeepc-acpi-scripts
 fuse-utils
 fusesmb
 insserv
 libengine-pkcs11-openssl
+ppp
+pppconfig
+pppoe
+pppoeconf
 prelink
-acpi
-cpufrequtils
+pcmciautils
+powertop
+vbetool
 
+genext2fs
+mtd-utils
