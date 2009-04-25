@@ -1,3 +1,4 @@
+# opera
 acroread
 acroread-dictionary-ja
 acroread-doc-ja
@@ -5,6 +6,7 @@ acroread-fonts-jpn
 acroread-l10n-ja
 acroread-plugins
 atmel-firmware
+bluez-firmware
 broadcom-sta-common
 cmap-adobe-japan1
 firmware-bnx2
@@ -14,15 +16,13 @@ firmware-linux
 firmware-ralink
 gs-cjk-resource
 gstreamer0.10-pitfdll
+icc-profiles
 lha
 libdvdcss2
 mozilla-acroread
-# opera
 poppler-data
 skype
 ttf-ipafont
 w32codecs
 xpdf-japanese
 zd1211-firmware
-icc-profiles
-bluez-firmware

@@ -26,7 +26,7 @@ lh_config noautoconfig \
 	-l ja \
 	--linux-packages "linux-image-2.6.29-backports.1 aufs-modules-2.6.29-backports.1" \
 	--packages-lists "lxde 01-system 10-packages 40-rescuetools 50-japanese 60-restricted" \
-	--packages "bootchart bootchart-view lxlauncher cryptsetup" \
-	--keyring-packages "debian-archive-keyring debian-backports-keyring" \
+	--packages "lxlauncher cryptsetup" \
+	--keyring-packages "debian-archive-keyring debian-backports-keyring debian-multimedia-keyring undebian-archive-keyring" \
 	--apt-secure disabled \
 	${@}

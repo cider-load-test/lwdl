@@ -1,6 +1,3 @@
-# metamail
-# sylpheed
-# sylpheed-i18n
 alsa-oss
 arj
 avahi-daemon
@@ -23,7 +20,6 @@ dcraw
 disk-manager
 escputil
 evince-gtk
-# extra-xdg-menus
 f-spot
 ffmpeg
 filezilla
@@ -37,6 +33,7 @@ foomatic-filters
 foomatic-filters-ppds
 foomatic-gui
 fuseiso
+fusion-icon
 gdebi
 ghostscript-x
 gimp
@@ -72,7 +69,6 @@ libnss-mdns
 libsvg-perl
 libwmf-bin
 libxml-xql-perl
-# menu-xdg
 min12xxw
 mozplugger
 mplayer
@@ -117,3 +113,4 @@ xsane
 xterm
 zile
 zip
+audacity
