@@ -1,3 +1,5 @@
 # lenny backports
+# deb http://www.backports.org/debian lenny-backports main contrib non-free
+# deb-src http://www.backports.org/debian lenny-backports main contrib non-free
 deb http://www.jp.backports.org/ lenny-backports main contrib non-free
 deb-src http://www.jp.backports.org/ lenny-backports main contrib non-free

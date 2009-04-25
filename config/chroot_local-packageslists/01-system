@@ -1,20 +1,23 @@
+# eeepc-acpi-scripts
 acpi
 acpi-support
+aptitude
 cpufrequtils
 dash
-# eeepc-acpi-scripts
 fuse-utils
 fusesmb
+genext2fs
+gnome-app-install
 insserv
 libengine-pkcs11-openssl
+mtd-utils
+pcmciautils
+powertop
 ppp
 pppconfig
 pppoe
 pppoeconf
 prelink
-pcmciautils
-powertop
+synaptic
 vbetool
-
-genext2fs
-mtd-utils
+vrms

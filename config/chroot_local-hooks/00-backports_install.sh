@@ -11,8 +11,8 @@ apt-get -y -t lenny-backports install flashplugin-nonfree
 
 # install restricted packages
 # apt-get -y install opera skype
-[ -f /usr/share/opera/ini/font.ini ] && sed -i 's/kochi/vl/' /usr/share/opera/ini/font.ini
-/usr/sbin/update-alternatives --set x-www-browser /usr/bin/iceweasel
+# [ -f /usr/share/opera/ini/font.ini ] && sed -i 's/kochi/vl/' /usr/share/opera/ini/font.ini
+# /usr/sbin/update-alternatives --set x-www-browser /usr/bin/iceweasel
 
 # clean up
 apt-get -y purge lxnm

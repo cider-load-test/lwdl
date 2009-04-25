@@ -17,7 +17,7 @@ gstreamer0.10-pitfdll
 lha
 libdvdcss2
 mozilla-acroread
-opera
+# opera
 poppler-data
 skype
 ttf-ipafont
@@ -25,3 +25,4 @@ w32codecs
 xpdf-japanese
 zd1211-firmware
 icc-profiles
+bluez-firmware
