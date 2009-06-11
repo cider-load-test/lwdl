@@ -1,10 +1,5 @@
 # opera
-acroread
-acroread-dictionary-ja
-acroread-doc-ja
-acroread-fonts-jpn
-acroread-l10n-ja
-acroread-plugins
+acroread acroread-dictionary-ja acroread-doc-ja acroread-fonts-jpn acroread-l10n-ja acroread-plugins mozilla-acroread
 atmel-firmware
 bluez-firmware
 broadcom-sta-common
@@ -14,12 +9,10 @@ firmware-ipw2x00
 firmware-iwlwifi
 firmware-linux
 firmware-ralink
-gs-cjk-resource
 gstreamer0.10-pitfdll
 icc-profiles
 lha
 libdvdcss2
-mozilla-acroread
 poppler-data
 skype
 ttf-ipafont

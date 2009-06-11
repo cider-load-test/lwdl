@@ -1,6 +1,5 @@
 # eeepc-acpi-scripts
-acpi
-acpi-support
+acpi acpi-support
 aptitude
 cpufrequtils
 dash
@@ -13,12 +12,11 @@ libengine-pkcs11-openssl
 mtd-utils
 pcmciautils
 powertop
-ppp
-pppconfig
-pppoe
-pppoeconf
+ppp pppconfig
+pppoe pppoeconf
 prelink
 synaptic
 vbetool
 vrms
 grandr
+usplash

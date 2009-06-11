@@ -1,22 +1,17 @@
+# jfbterm
+# openoffice.org-help-ja openoffice.org-l10n-ja
 # ttf-umefont
+# uim-anthy
+# unifont
 icedove-l10n-ja
 iceweasel-l10n-ja
-jfbterm
 lv
 manpages-ja
 nkf
-openoffice.org-help-ja
-openoffice.org-l10n-ja
-ttf-kochi-gothic
-ttf-kochi-mincho
+ttf-kochi-gothic ttf-kochi-mincho
 ttf-mona
-ttf-sazanami-gothic
-ttf-sazanami-mincho
+ttf-sazanami-gothic ttf-sazanami-mincho
 ttf-vlgothic
-uim
+uim uim-qt uim-qt3
 uim-applet-gnome
 uim-prime
-uim-qt
-uim-qt3
-unifont
-# uim-anthy

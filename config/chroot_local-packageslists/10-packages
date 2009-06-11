@@ -4,17 +4,8 @@ avahi-daemon
 bash-completion
 bzip2
 cabextract
-compiz
-compiz-fusion-plugins-extra
-compiz-fusion-plugins-main
-compiz-fusion-plugins-unsupported
-compizconfig-settings-manager
-cups
-cups-bsd
-cups-client
-cups-driver-gutenprint
-cups-pdf
-cupsddk
+compiz compiz-fusion-plugins-extra compiz-fusion-plugins-main compiz-fusion-plugins-unsupported compizconfig-settings-manager fusion-icon
+cups cups-client cups-driver-gutenprint cups-pdf cupsddk
 curlftpfs
 dcraw
 disk-manager
@@ -22,38 +13,23 @@ escputil
 evince-gtk
 f-spot
 ffmpeg
-filezilla
-filezilla-locales
+filezilla filezilla-locales
 foo2zjs
-foomatic-db
-foomatic-db-engine
-foomatic-db-gutenprint
-foomatic-db-hpijs
-foomatic-filters
-foomatic-filters-ppds
-foomatic-gui
+foomatic-db foomatic-db-engine foomatic-db-gutenprint foomatic-db-hpijs foomatic-filters foomatic-filters-ppds foomatic-gui
 fuseiso
-fusion-icon
 gdebi
 ghostscript-x
-gimp
-gimp-data-extras
-gimp-gap
+gimp gimp-data-extras gimp-gap
 gimp-gutenprint
 gimp-plugin-registry
 gnome-panel-data
 gnome-volume-manager
-gstreamer0.10-ffmpeg
-gstreamer0.10-gnomevfs
-gstreamer0.10-plugins-bad
-gstreamer0.10-plugins-ugly
+gstreamer0.10-ffmpeg gstreamer0.10-gnomevfs gstreamer0.10-plugins-bad gstreamer0.10-plugins-ugly
 gtkam-gimp
 gutenprint-locales
 hal-cups-utils
 hardinfo
-hp-ppd
-hpijs
-hplip
+hp-ppd hpijs hplip
 icedove
 iceowl-extension
 iceweasel-gnome-support
@@ -74,8 +50,7 @@ mozplugger
 mplayer
 openclipart
 openjdk-6-jre
-openoffice.org
-openoffice.org-gtk
+# openoffice.org openoffice.org-gtk
 openprinting-ppds
 oss-compat
 p7zip-full
@@ -106,11 +81,8 @@ unzip
 vlc
 wget
 wine
-xdg-user-dirs
-xdg-user-dirs-gtk
-xdg-utils
+xdg-user-dirs xdg-user-dirs-gtk xdg-utils
 xsane
 xterm
 zile
 zip
-audacity

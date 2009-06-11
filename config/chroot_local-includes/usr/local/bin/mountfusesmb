@@ -1,3 +1,0 @@
-#/bin/bash
-/bin/chmod 600 ${HOME}/.smb/fusesmb.conf
-/usr/bin/fusesmb ${HOME}/WindowsNetwork/

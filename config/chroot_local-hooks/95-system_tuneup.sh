@@ -8,16 +8,22 @@ sed -i 's/^[23456]/#\ &/' /etc/inittab
 sed -i 's/^CONCURRENCY=none/CONCURRENCY=startpar/' /etc/init.d/rc
 
 # remove daemon
-DAEMON="hdparm pppd-dns cron portmap rsyslog partimaged ssh timidity saned acct clamav-freshclam system-tools-backends timidity rsync"
-for i in $DAEMON; do update-rc.d -f $i remove; done
+DAEMON="acct acpi-support avahi-daemon clamav-freshclam cron hdparm partimaged portmap pppd-dns rc.local rsync rsyslog saned ssh system-tools-backends timidity vbesave"
+for i in ${DAEMON}; do update-rc.d -f ${i} remove; done
 
 # set insserv
-/usr/sbin/update-bootsystem-insserv
+update-bootsystem-insserv
+
+# set usplash
+#update-alternatives --set usplash-artwork.so /usr/lib/usplash/CrunchyBranch.so
 
 # remove packages
-apt-get clean --yes
-apt-get autoremove --yes
-dpkg -P `dpkg -l | grep ^rc | cut -d' ' -f 3`
+apt-get -y clean 
+apt-get -y autoremove 
+
+# purge package
+PURGEPKG=$(dpkg -l | grep ^rc | cut -d' ' -f3)
+[ -z "${PURGEPKG}" ] || dpkg -P ${PURGEPKG}
 
 # Removing unused files
 find . -name *~ | xargs rm -f
@@ -32,6 +38,8 @@ do
         : > ${FILE}
 done
 
-# prelink
-prelink -afmR
+# Cleaning /lib/init/rw/*
+rm -rf /lib/init/rw/*
 
+# prelink
+[ -f /usr/sbin/prelink ] && prelink -afmR
