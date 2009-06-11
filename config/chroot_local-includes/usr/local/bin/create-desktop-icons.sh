@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 # read user directory
 # XDG_DESKTOP_DIR = desktop directory
@@ -7,11 +7,36 @@
 # icons directory
 ICON_DIR=/usr/share/applications
 
-# copy icons
-ICONS="skype.desktop icedove.desktop sylpheed.desktop AdobeReader.desktop evince.desktop epdfview.desktop f-spot.desktop filezilla.desktop gimp.desktop inkscape.desktop lxde-x-www-browser.desktop ooo-startcenter.desktop pidgin.desktop rhythmbox.desktop system-config-printer.desktop tsclient.desktop vlc.desktop"
-for i in ${ICONS}; do
-  if [ -e ${ICON_DIR}/${i} ]; then
-    [ -e ${XDG_DESKTOP_DIR}/${i} ] || cp ${ICON_DIR}/${i} ${XDG_DESKTOP_DIR}/
-  fi
-done
+# PDF Viewer
+PDF=AdobeReader.desktop
+if ! [ -f ${ICON_DIR}/${PDF} ]; then
+  PDF=evince.desktop
+elif ! [ -f ${ICON_DIR}/${PDF} ]; then
+  PDF=epdfview.desktop
+fi
 
+# web browser
+BROWSER=lxde-x-www-browser.desktop
+[ -f ${ICON_DIR}/${BROWSER} ] || BROWSER=iceweasel.desktop
+
+# MUA
+MUA=sylpheed.desktop
+[ -f ${ICON_DIR}/${MUA} ] || MUA=icedove.desktop
+
+# Media Player
+MPLAYER=vlc.desktop
+[ -f ${ICON_DIR}/${MPLAYER} ] || MPLAYER=totem.desktop
+
+# Sound Player
+SPLAYER=exaile.desktop
+[ -f ${ICON_DIR}/${SPLAYER} ] || SPLAYER=rhythmbox.desktop
+
+# skype
+SKYPE=skype.desktop
+[ -f ${ICON_DIR}/${SKYPE} ] || SKYPE=""
+
+# copy icons
+ICONS="${SKYPE} ${MUA} ${BROWSER} ${MPLAYER} ${SPLAYER} ${PDF} f-spot.desktop filezilla.desktop gimp.desktop inkscape.desktop ooo-startcenter.desktop pidgin.desktop system-config-printer.desktop tsclient.desktop"
+for i in ${ICONS}; do
+  [ -e ${XDG_DESKTOP_DIR}/${i} ] || cp ${ICON_DIR}/${i} ${XDG_DESKTOP_DIR}/
+done

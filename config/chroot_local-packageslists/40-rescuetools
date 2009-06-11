@@ -1,7 +1,6 @@
 # ophcrack-cli
 afio
-clamav
-clamtk
+clamav clamtk
 e2fsprogs
 e2tools
 gparted
@@ -12,13 +11,11 @@ ntfs-3g
 ntfsprogs
 ophcrack
 parted
-partimage
-partimage-server
+partimage partimage-server
 reiser4progs
 reiserfsprogs
 rsync
 ssh
-syslinux
-syslinux-common
+syslinux syslinux-common
 testdisk
 xfsprogs

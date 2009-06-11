@@ -1,43 +1,36 @@
-alsa-oss
-arj
+# compiz
+compiz compiz-fusion-plugins-extra compiz-fusion-plugins-main compiz-fusion-plugins-unsupported compizconfig-settings-manager fusion-icon
+libgl1-mesa-dri
+
+# printing
+cups cups-client cups-driver-gutenprint cups-pdf cupsddk
+foomatic-db foomatic-db-engine foomatic-db-gutenprint foomatic-db-hpijs foomatic-filters foomatic-filters-ppds foomatic-gui
+escputil foo2zjs gimp-gutenprint gutenprint-locales
+hp-ppd hpijs hplip ijsgutenprint hal-cups-utils openprinting-ppds
+system-config-printer printconf ghostscript-x
+
+# multimedia
+alsa-oss oss-compat
+gimp gimp-data-extras gimp-gap gtkam-gimp gimp-plugin-registry
+gstreamer0.10-ffmpeg gstreamer0.10-gnomevfs gstreamer0.10-plugins-bad gstreamer0.10-plugins-ugly
+imagemagick inkscape f-spot mplayer ffmpeg rhythmbox skencil timidity totem
+dcraw perlmagick vlc xsane
+
+mozplugger totem-mozilla icedtea-gcjwebplugin
+icedove iceowl-extension iceweasel-gnome-support
+bzip2 unrar-free unzip p7zip-full zip
+filezilla filezilla-locales lftp wget
+fuseiso sshfs curlftpfs
+gnome-panel-data gnome-volume-manager
+gdebi
 avahi-daemon
 bash-completion
-bzip2
-cabextract
-compiz compiz-fusion-plugins-extra compiz-fusion-plugins-main compiz-fusion-plugins-unsupported compizconfig-settings-manager fusion-icon
-cups cups-client cups-driver-gutenprint cups-pdf cupsddk
-curlftpfs
-dcraw
+tsclient
 disk-manager
-escputil
-evince-gtk
-f-spot
-ffmpeg
-filezilla filezilla-locales
-foo2zjs
-foomatic-db foomatic-db-engine foomatic-db-gutenprint foomatic-db-hpijs foomatic-filters foomatic-filters-ppds foomatic-gui
-fuseiso
-gdebi
-ghostscript-x
-gimp gimp-data-extras gimp-gap
-gimp-gutenprint
-gimp-plugin-registry
-gnome-panel-data
-gnome-volume-manager
-gstreamer0.10-ffmpeg gstreamer0.10-gnomevfs gstreamer0.10-plugins-bad gstreamer0.10-plugins-ugly
-gtkam-gimp
-gutenprint-locales
-hal-cups-utils
+evince
+# openoffice.org openoffice.org-gtk
+openclipart
 hardinfo
-hp-ppd hpijs hplip
-icedove
-iceowl-extension
-iceweasel-gnome-support
-ijsgutenprint
-imagemagick
-inkscape
-lftp
-libgl1-mesa-dri
 libgnome2-perl
 libgnomevfs2-extra
 libnet-cups-perl
@@ -46,43 +39,21 @@ libsvg-perl
 libwmf-bin
 libxml-xql-perl
 min12xxw
-mozplugger
-mplayer
-openclipart
-openjdk-6-jre
-# openoffice.org openoffice.org-gtk
-openprinting-ppds
-oss-compat
-p7zip-full
-perlmagick
 pidgin
-printconf
 pstoedit
 psutils
 python-coherence
 python-lxml
 python-numpy
 rarian-compat
-rhythmbox
-skencil
 smbclient
-sqlite
-sqlite3
-sshfs
-system-config-printer
-timidity
-totem
-totem-mozilla
-tsclient
+sqlite sqlite3
 ttf-bitstream-vera
 unixodbc
-unrar-free
-unzip
-vlc
-wget
 wine
 xdg-user-dirs xdg-user-dirs-gtk xdg-utils
-xsane
 xterm
 zile
-zip
+
+xserver-xorg-video-via xserver-xorg-video-geode
+xserver-xorg-input-evtouch xserver-xorg-input-tslib xserver-xorg-input-vmmouse xserver-xorg-input-joystick
