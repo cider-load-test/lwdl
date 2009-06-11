@@ -16,5 +16,5 @@ apt-get -y purge lxnm
 # [ -f /usr/share/opera/ini/font.ini ] && sed -i 's/kochi/vl/' /usr/share/opera/ini/font.ini
 # /usr/sbin/update-alternatives --set x-www-browser /usr/bin/iceweasel
 
-apt-get -y -t lenny-backports dist-upgrade
+# apt-get -y -t lenny-backports dist-upgrade
 
