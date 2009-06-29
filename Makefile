@@ -20,5 +20,5 @@ clean:
 
 distclean: clean
 	sudo lh_clean --purge
-	sudo rm -f *.iso *.list *.packages
+	sudo rm -f *.iso *.list *.packages *.buildlog
 	rm -f debian_live-buildlog.* *.md5sum

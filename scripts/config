@@ -27,6 +27,6 @@ lh_config noautoconfig \
 	--linux-packages "linux-image-2.6.29-backports.2 aufs-modules-2.6.29-backports.2" \
 	--packages-lists "lxde 01-system 10-packages 40-rescuetools 50-japanese 60-restricted" \
 	--packages "usplash-theme-crunchybranch" \
-	--keyring-packages "debian-archive-keyring debian-backports-keyring debian-multimedia-keyring undebian-archive-keyring" \
+	--keyring-packages "debian-archive-keyring debian-backports-keyring debian-multimedia-keyring" \
 	--apt-secure disabled \
 	${@}

@@ -9,7 +9,7 @@
 .directory
 .stage/
 binary/
-cache/
+cache*
 chroot/
 config/binary
 config/bootstrap
