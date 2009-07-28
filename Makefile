@@ -1,24 +1,28 @@
-BUILDDATE := $(shell date +%Y%m%d%H%M%S)
+BOOTOPTION_LIVE = quiet locale=ja_JP.UTF-8 keyb=jp kmodel=jp106 vga=788
+BOOTOPTION_INSTALLER = -- quiet video=vesa:ywrap,mtrr vga=788 desktop=lxde
 
-all: build
+all: config build
 
-build:
-#	sudo MKSQUASHFS_OPTIONS="-b 1024k" lh_build 2>&1 | tee debian_live-buildlog.$(BUILDDATE)
-#	sudo lh_build 2>&1 | tee debian_live-binary-$(BUILDDATE).buildlog
-#	mv binary.img debian_live-binary-$(BUILDDATE).img
-#	mv binary.list debian_live-binary-$(BUILDDATE).list
-#	mv binary.packages debian_live-binary-$(BUILDDATE).packages
-#	md5sum debian_live-binary-$(BUILDDATE).img > debian_live-binary-$(BUILDDATE).img.md5sum
+config: clean
+	lh_config \
+		--binary-filesystem fat16 \
+		--binary-images usb-hdd \
+		--bootappend-live "${BOOTOPTION_LIVE}" \
+		--categories "main contrib non-free" \
+		--distribution lenny \
+		--keyring-packages "debian-backports-keyring debian-multimedia-keyring" \
+		--linux-flavours 686 \
+		--linux-packages "linux-image-2.6 aufs-modules-2.6" \
+		--packages "usplash-theme-crunchybranch" \
+		--packages-lists "lxde 01-system 10-packages 40-rescuetools 50-japanese 60-restricted"
 
-	lh_config 
+build: 
 	sudo lh_build 
-
-.PHONY: clean
 
 clean:
 	sudo lh_clean
 
 distclean: clean
 	sudo lh_clean --purge
-	sudo rm -f *.iso *.list *.packages *.buildlog
-	rm -f debian_live-buildlog.* *.md5sum
+	sudo rm -f *.iso *.img *.list *.packages *.buildlog *.md5sum
+
