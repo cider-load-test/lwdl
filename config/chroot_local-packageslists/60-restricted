@@ -3,6 +3,7 @@ acroread acroread-dictionary-ja acroread-doc-ja acroread-fonts-jpn acroread-l10n
 atmel-firmware
 bluez-firmware
 broadcom-sta-common
+zd1211-firmware
 cmap-adobe-japan1
 firmware-bnx2
 firmware-ipw2x00
@@ -18,4 +19,4 @@ skype
 ttf-ipafont
 w32codecs
 xpdf-japanese
-zd1211-firmware
+flashplugin-nonfree

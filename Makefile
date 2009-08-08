@@ -1,5 +1,5 @@
-BOOTOPTION_LIVE = quiet locale=ja_JP.UTF-8 keyb=jp kmodel=jp106 vga=788
-BOOTOPTION_INSTALLER = -- quiet video=vesa:ywrap,mtrr vga=788 desktop=lxde
+BOOTOPTION_LIVE = quiet vga=788 locale=ja_JP.UTF-8 keyb=jp kmodel=jp106 utc=no tz=Asia/Tokyo noswap nognomepanel nokpersonalizer persistent
+#BOOTOPTION_INSTALLER = -- quiet video=vesa:ywrap,mtrr vga=788 desktop=lxde
 
 all: config build
 
@@ -14,7 +14,7 @@ config: clean
 		--linux-flavours 686 \
 		--linux-packages "linux-image-2.6 aufs-modules-2.6" \
 		--packages "usplash-theme-crunchybranch" \
-		--packages-lists "lxde 01-system 10-packages 40-rescuetools 50-japanese 60-restricted"
+		--packages-lists "lxde 01-system 10-lxde-application 20-japanese 30-rescue 60-restricted"
 
 build: 
 	sudo lh_build 

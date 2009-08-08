@@ -1,0 +1,52 @@
+# compiz
+compiz compiz-fusion-plugins-extra compiz-fusion-plugins-main compiz-fusion-plugins-unsupported compizconfig-settings-manager fusion-icon
+libgl1-mesa-dri
+metacity
+
+# print
+cups cups-client cups-driver-gutenprint cups-pdf cupsddk
+foomatic-db foomatic-db-engine foomatic-db-gutenprint foomatic-db-hpijs foomatic-filters foomatic-filters-ppds foomatic-gui
+escputil foo2zjs gimp-gutenprint gutenprint-locales
+hp-ppd hpijs hplip ijsgutenprint hal-cups-utils openprinting-ppds
+system-config-printer printconf ghostscript-x
+
+# disk/filesystem
+disk-manager
+gparted
+
+# multimedia
+alsa-oss oss-compat
+gimp gimp-data-extras gimp-gap gtkam-gimp gimp-plugin-registry
+gstreamer0.10-ffmpeg gstreamer0.10-gnomevfs gstreamer0.10-plugins-bad gstreamer0.10-plugins-ugly
+imagemagick inkscape f-spot mplayer ffmpeg rhythmbox skencil timidity totem
+dcraw perlmagick vlc xsane
+gnomebaker
+
+# application
+epdfview
+filezilla filezilla-locales
+
+mozplugger totem-mozilla icedtea-gcjwebplugin
+icedove iceowl-extension iceweasel-gnome-support
+
+#openoffice.org openoffice.org-gtk
+#openclipart
+
+pidgin
+screen
+smbclient
+ssh
+tsclient
+w3m-img
+wine
+xdg-user-dirs xdg-user-dirs-gtk xdg-utils
+gnome-menus menu-xdg
+
+ruby
+libsvg-perl libxml-xql-perl
+python-lxml python-numpy python-uniconvertor
+ttf-bitstream-vera
+libwmf-bin
+pstoedit
+libgimp-perl
+rarian-compat
